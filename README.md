@@ -1,2 +1,2 @@
-# bhutuu.github.io
-This my first website just an initiative to learn web development!
+# my_webpage
+This is my first webpage just as initiative to learn web development.

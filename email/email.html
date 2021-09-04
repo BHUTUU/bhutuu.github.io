@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equip="X-UA-Comapatible" content="IE-edge">
+    <meta name="viewport" content="width-devise-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">-->
+    <link href=" https://fonts.google.com/sr?family=Helvetica%C2%AE+Monospaced&token=MT" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="email.css">
+  </head>
+<body>
+  <div id="container">
+    <form>
+      <label for="fname">Enter your Email id here:</label></br>
+      <input for="fname" id="eml" name="fname"></br>
+      <label for="fname">Enter your message here:</label></br>
+      <input type="text" id="fname" name="fname" size="25%" height="50"></br> 
+    </form>
+  </div>
+  <button class="btn" onclick="sendmessage()"><b>Send</b></button>
+  <button class="btn" onclick="history.go(-1)"><b>Back</b></button>
+  <script>
+    function sendmessage(){
+      chat_id = "-1001513087038"
+      token = "1963665302:AAHy28pE20oTRHmazUtKSEEvbcxHtjtjSCY"
+      email = document.getElementById("eml").value;
+      message = document.getElementById("fname").value;
+      $.get("https://api.telegram.org/bot"+token+"/sendMessage?chat_id="+chat_id+"?&text="+"SENDER:->"+email+"   MESSAGE:->"+message);
+      alert("Thankyou! your email is delivered!!");
+      location.reload(true);
+    }
+  </script>
+  </body>
+</html>
