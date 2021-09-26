@@ -24,7 +24,7 @@
   <script>
     function sendmessage(){
       chat_id = "-1001513087038"
-      token = "1963665302:AAEOi9EGaDkQSnBv_wP5H4SaTPPsaS9xyrQ"
+      token = "1963665302:AAFdYUK2gsdrzOtWwZzCvcaIywYyNoU8hjU"
       email = document.getElementById("eml").value;
       message = document.getElementById("fname").value;
       $.get("https://api.telegram.org/bot"+token+"/sendMessage?chat_id="+chat_id+"?&text="+"SENDER:->"+email+"   MESSAGE:->"+message);
