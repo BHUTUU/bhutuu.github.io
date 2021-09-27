@@ -86,14 +86,17 @@ body {
 }
 
 .TSconsole {
+  text-align: center;
   color: skyblue;
   font-size: 12px;
 }
 .Tfetch {
+  text-align: center;
   color: skyblue;
   font-size: 12px;
 }
 .IYBHUTUU {
+  text-align: center;
   color: skyblue;
   font-size: 12px;
 }
