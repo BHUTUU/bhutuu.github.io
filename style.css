@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 5px;
+  background: url("img/backbhutuu.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+}
+/*<<<----------NAVIGATION BAR---------->>>*/
+.navbar {
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 10px 10px 20px red, 
+            -10px -10px 20px orange;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+.home {
+  width: 50px;
+  text-align: center;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+}
+.home:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+.about {
+  margin-right: 10px;
+  text-decoration: none;
+  width: 50px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: grey;
+  color: white;
+}
+.about:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+.downloads {
+  margin-right: 10px;
+  text-decoration: none;
+  width: 50px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: grey;
+  color: white;
+}
+.downloads:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+.email {
+  margin-right: 10px;
+  text-decoration: none;
+  width: 50px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: grey;
+  color: white;
+}
+.email:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+.sos {
+  text-decoration: none;
+  width: 50px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: grey;
+  color: white;
+}
+.sos:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+/*<<<---------INTRODUCTION--------->>>*/
+@keyframes animation1 {
+  0% {
+    background-color: #ffffff;
+    color: #091242;
+  }
+  25% {
+    background-color: #79A37B;
+    color: #687BE8;
+  }
+  50% {
+    background-color: #5DA161;
+    color: #737EBD;
+  }
+  60% {
+    background-color: #4B9999;
+    color: #828EA8;
+  }
+  70% {
+    background-color: #828EA8;
+    color: #4B9999;
+  }
+  80% {
+    background-color: #737EBD;
+    color: #5DA161;
+  }
+  90% {
+    background-color: #687BE8;
+    color: #79A37B;
+  }
+  100% {
+    background-color: #091242;
+    color: #ffffff;
+  }
+}
+@keyframes animation2 {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.intro {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  animation: animation1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.incircle {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: animation2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-color: lightpink;
+  border-radius: 20px;
+}
+/*<<------branding------>>*/
+.logoContainer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background: white;/*#e0e0e0*/;
+  box-shadow:  5px 5px 10px #9d9d9d,
+               -5px -5px 10px #ffffff;
+}
+@keyframes rotateClockWise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateAntiClockWise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.circle {
+  height: 145px;
+  width: 145px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(darkred, gold, darkblue);
+  animation: rotateClockWise;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.circle::before {
+  animation: rotateClockWise;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.imgLogo {
+  height: 140px;
+  width: 140px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white; /*#e0e0e0;*/
+  box-shadow:  5px 5px 10px #9d9d9d,
+               -5px -5px 10px #ffffff;
+}
+.bhutLogo {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  animation: rotateAntiClockWise;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.bhutLogo::before {
+  animation: rotateAntiClockWise;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+/*<<<---------Projects------------>>>*/
+.projects {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headpro {
+  font-size: 1.5em;
+  font-family: monospace;
+  font: bold;
+}
+.pr {
+  margin-top: 5px;
+  height: inherit;
+  width: 200px;
+  border: 2px solid red;
+  border-radius: 10px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.prname {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  text-decoration: none;
+  font: 1em;
+  color: black;
+  background-color: aqua;
+}
+.prname:hover {
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+/*<<<----social box---->>>*/
+.socialBox {
+  margin-top: 100px;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: magenta;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  zoom: 2;
+}
+@keyframes slidup {
+  0% {
+    border-radius: 100%;
+    background: red;
+    box-shadow:  5px 5px 17px black,
+                 -5px -5px 17px blue;
+  }
+  100% {
+    border-radius: 100%;
+    background: green;
+    box-shadow:  3px 3px 14px black,
+                 -3px -3px 14px blue;
+  }
+}
+.fa:hover {
+  cursor: pointer;
+  color: red;
+  animation: slidup;
+  animation-duration: 1s;
+}
