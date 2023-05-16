@@ -319,3 +319,9 @@ body {
   animation: slidup;
   animation-duration: 1s;
 }
+.countVisitor {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
