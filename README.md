@@ -25,7 +25,7 @@
 <p align="left">
 <a href="https://linkedin.com/in/bhutuu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="bhutuu" height="30" width="40" /></a>
 <a href="https://instagram.com/suman_cubezy" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="suman_cubezy" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/@suman_bhutuu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="@suman_bhutuu" height="30" width="40" /></a>
+<a href="https://www.youtube.com/@suman_bhutuu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="@suman_bhutuu" height="30" width="40" /></a>
 <a href="https://www.leetcode.com/bhutuu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="bhutuu" height="30" width="40" /></a>
 </p>
 
