@@ -1,95 +1,154 @@
 /*css for main index.html*/
-* {
-  margin: 0:
+body {
+  font-family: 'Segoe UI', 'monospace', Arial, sans-serif;
+  background: #181c20;
+  color: #e0e0e0;
+  margin: 0;
   padding: 0;
 }
-#container{
-  color: black;
+#container {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  background: #23272b;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #1118;
+  padding: 32px 36px 24px 36px;
 }
-body {
-  font-family: 'Baloo Bhai', cursive;
-  font-family: 'monospace', italic;
-  color: white;
-  background: url("../img/downloads.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #23272b;
+  padding: 18px 36px;
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0 2px 8px #1118;
 }
-
 .left {
-  display: inline-block;
-  position: absolute;
-  left: 10px;
-  top: 10px;
- }
-
- .left img {
-   height: 70px;
-   width: 70px;
- }
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+  border: 2px solid #ffe066;
+}
 .left div {
-  line-height: 19px;
-  font-size: 13px;
-  text-align: left;
-  color: black
+  color: #ffe066;
+  font-size: 1em;
+  font-weight: 600;
 }
-
 .mid {
-  display: block;
-  width: 50%;
-  margin: 15px auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
-
-.right {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  display: inline-block;
- }
-
 .navbar {
-  display: inline-block;
-}
-
-.navbar li {
-  display: inline-block;
-  font-size: 15px;
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
 }
 .navbar li a {
-  color: black;
+  color: #e0e0e0;
   text-decoration: none;
-  padding: 5px 15px;
+  font-weight: 500;
+  font-size: 1.08em;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
 }
-.navbar li a:hover,
-.navbar li a.active {
-  text-decoration: underline;
-  color: grey;
+.navbar li a.active, .navbar li a:hover {
+  color: #ffe066;
+  background: #23272b;
+}
+.right {
+  display: flex;
+  gap: 10px;
 }
 .btn {
-/*  font-family: 'Baloo Bhai', cursive;*/
-  font-family: 'monospace', bold;
-  margin: 0px 9px;
-  background-color: black;
-  color: white;
-  padding: 2px 10px;
-  border: 2px solid grey;
-  border-radius: 10px;
-  font-size: 8px;
+  font-family: 'Segoe UI', 'monospace', Arial, sans-serif;
+  background: #181c20;
+  color: #ffe066;
+  border: 1.5px solid #ffe066;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-size: 1em;
   cursor: pointer;
+  transition: background 0.2s, color 0.2s;
 }
-
 .btn:hover {
-  background-color: rgb(31, 30, 30);
+  background: #ffe066;
+  color: #181c20;
 }
-.main{
-  color: black;
+h2 {
+  color: #ffe066;
+  font-size: 1.5em;
+  margin-bottom: 18px;
+  text-align: center;
+  font-weight: 700;
 }
-
-
-.intro {
-  color: black;
-  font-size: 12px
+.downloads-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 20px;
+}
+.download-card {
+  background: #23272b;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #1118;
+  padding: 20px 18px 10px 18px;
+}
+.download-title {
+  color: #ffe066;
+  font-size: 1.15em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.download-card ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+  margin-bottom: 0;
+}
+.download-card ul li {
+  margin-bottom: 8px;
+  color: #e0e0e0;
+  position: relative;
+  padding-left: 1.5em;
+}
+.download-card ul li:before {
+  content: '\2192';
+  color: #ffe066;
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+}
+.download-link {
+  color: #ffe066;
+  font-size: 0.98em;
+  margin-left: 8px;
+  font-style: italic;
+}
+@media (max-width: 600px) {
+  #container, .header {
+    padding: 10px 4vw;
+  }
+  .downloads-list, .download-card {
+    padding: 10px 2vw;
+  }
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mid {
+    justify-content: flex-start;
+  }
 }
 

@@ -3,60 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BHUTUU</title>
+  <title>Suman Kumar | Electrical Engineer & Automation Enthusiast</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" href="img/bhutuu.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="img/selfMeImg.png" type="image/x-icon">
 </head>
 <body>
-  <!--<<<-------Navigation bar----------->
-  <div class="navbar">
-    <a href="https://bhutuu.github.io" class="home">home</a>
-    <a href="subhtml/about.html" class="about">about</a>
-    <a href="subhtml/downloads.html" class="downloads">store</a>
-    <a href="mailto:raj259942@gmail.com" class="email">email</a>
-    <a href="email/email.html" class="sos">sos</a>
-  </div>
-  <!--<<<-------INTRODUCTION---------->
-  <div class="intro">
-    <div class="incircle">
-      <p class="welcome">Hello visitors!</p>
+  <header class="header">
+    <div class="left">
+      <img src="img/selfMeImg.png" alt="Electrical Designer Logo">
+      <div>Electrical Designer</div>
     </div>
-  </div>
-  <!--LOGO--->
-  <div class="logoContainer">
-    <div class="brand">
-      <div class="circle">
-        <div class="imgLogo">
-          <img src="img/bhutuu.jpg" alt="" class="bhutLogo">
-        </div>
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="subhtml/downloads.html">Downloads</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <button class="btn" onclick="window.location.href='mailto:suman.bhutuu@gmail.com';"><b>Email</b></button>
+      <button class="btn" onclick="window.location.href='https://github.com/BHUTUU/';"><b>Github</b></button>
+    </div>
+  </header>
+  <div id="container">
+    <!-- Hero Section -->
+    <div class="intro">
+      <div class="incircle">
+        <h1 style="margin-bottom: 0.2em;">Hi 👋, I'm Suman Kumar</h1>
+        <h3>Electrical Engineer | T&D and Infra Design | Automation & ML Enthusiast | India</h3>
+      </div>
+    </div>
+    <!-- About Me & Skills -->
+    <div class="skills-section">
+      <h2 class="section-title"><i class="fa fa-bolt"></i> About Me</h2>
+      <p>
+        I thrive at the intersection of engineering and code—turning complex challenges into streamlined, digital solutions. Whether it's automating CAD workflows, designing smarter infrastructure, or experimenting with AI, I love building tools that make real work easier and faster.
+      </p>
+      <ul class="skills-list">
+        <li>🚀 Latest project: <a href="https://github.com/BHUTUU/plotDwg" target="_blank">AutoCAD Plotting Automation</a></li>
+        <li>🤝 Let’s build together: <a href="https://github.com/BHUTUU/AutocadWork" target="_blank">AutoCAD Automation Library</a></li>
+        <li>🌱 Always learning: C#, MERN Stack, and new ways to automate the future</li>
+      </ul>
+      <hr style="margin: 18px 0; border: 0; border-top: 1px solid #444;">
+      <h2 class="section-title"><i class="fa fa-cogs"></i> Languages & Tools</h2>
+      <div style="margin-bottom: 18px;">
+        <img src="https://skillicons.dev/icons?i=python,c,cpp,cs,html,css,js,ts,nodejs,express,react,mongodb,mysql,postgres,java,dotnet,flask,git,github,linux,arduino,tensorflow,pytorch,matlab,photoshop" style="max-width:100%;height:auto;" alt="Languages & Tools" />
+      </div>
+    </div>
+    <!-- Connect Section -->
+    <div class="connect-section">
+      <p class="headpro" style="text-align:center;margin-bottom:18px;">Let's Connect!</p>
+      <p style="text-align:center;color:#ffe066;margin-bottom:18px;">I'm always open to new ideas, collaborations, or just a good engineering chat. Reach out below!</p>
+      <div class="connect-icons">
+        <a href="https://linkedin.com/in/bhutuu" target="_blank" class="connect-link" title="LinkedIn">
+          <i class="fa fa-linkedin-square"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/BHUTUU" target="_blank" class="connect-link" title="GitHub">
+          <i class="fa fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://instagram.com/suman_cubezy" target="_blank" class="connect-link" title="Instagram">
+          <i class="fa fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="mailto:suman.bhutuu@gmail.com" class="connect-link" title="Email">
+          <i class="fa fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
+    <!-- GitHub Stats -->
+    <div class="skills-section">
+      <h2 class="section-title"><i class="fa fa-bar-chart"></i> GitHub Stats</h2>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+        <img src="https://github-profile-trophy.vercel.app/?username=bhutuu&theme=onedark" alt="Trophies" style="max-width:100%;height:auto;" />
+        <img src="https://github-readme-stats.vercel.app/api?username=bhutuu&show_icons=true&theme=tokyonight" alt="GitHub Stats" style="max-width:100%;height:auto;" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bhutuu&layout=compact&theme=tokyonight" alt="Top Languages" style="max-width:100%;height:auto;" />
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=bhutuu&theme=tokyonight" alt="Streak Stats" style="max-width:100%;height:auto;" />
       </div>
     </div>
   </div>
-  <!--Projects-->
-  <div class="projects">
-    <p class="headpro"><<<-----Projects----->>></p>
-    <div class="pr"><a href="https://github.com/BHUTUU/EncryptPDFs" class="prname">EncryptPDFs</a></div>
-    <div class="pr"><a href="https://github.com/BHUTUU/acadlinetype" class="prname">AcadLineTypeSolution</a></div>
-    <div class="pr"><a href="https://github.com/BHUTUU/TicTacToe" class="prname">TicTacToe</a></div>
-    <div class="pr"><a href="https://github.com/BHUTUU/TSconsole-framework" class="prname">TSconsole-framrwork</a></div>
-    <div class="pr"><a href="https://github.com/BHUTUU/cloudflare-ui" class="prname">cloudflare-ui</a></div>
-    <div class="pr"><a href="https://github.com/BHUTUU/liveserver" class="prname">liveserver</a></div>
-    <div class="pr"><a href="https://github.com/BHUTUU/trace" class="prname">trace</a></div>
-    <div class="pr"><a href="https://github.com/BHUTUU/tg-bot" class="prname">tg-bot</a></div>
-    <div class="pr"><a href="https://github.com/BHUTUU/tscrypt" class="prname">tscrypt</a></div>
-  </div>
-  <!--Social Handles-->
-  <div class="socialBox">
-    <a href="https://t.me/suman_bhutuu" class="handles fa fa-telegram"></a>
-    <a href="https://www.instagram.com/suman_cubezy" class="handles fa fa-instagram"></a>
-    <a href="https://github.com/BHUTUU" class="handles fa fa-github"></a>
-    <a href="https://youtube.com/channel/UCcbIIYUlcfjkYLHQ5EklztA" class="handles fa fa-youtube"></a>
-  </div>
-  <!--xx-->
-  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-  <div class="countVisitor">
-    <div class="elfsight-app-dd55e56e-49a5-407b-b990-e1814940cfc2"></div>
-  </div>
+  <footer class="footer">
+    <p>Professional Electrical Designer Portfolio &copy; 2024</p>
+  </footer>
 </body>
 </html>
+
